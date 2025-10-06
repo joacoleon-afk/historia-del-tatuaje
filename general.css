@@ -1,0 +1,89 @@
+/*GENERAL*/
+*{
+    padding: 0;
+    margin: 5;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.titulo-seccion{
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px;
+  font-size: 2.5rem;
+}
+body {
+  font-family: 'Roboto Flex', sans-serif;
+}
+h2 {
+  border-bottom: 2px solid #555; /* gris oscuro */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  display: inline-block; /* para que la línea no cruce toda la página */
+}
+
+
+
+/*HOME*/
+#home{
+  background-image: url("assets/foto-fondo.jpg");
+  background-size: cover;      /* La imagen cubre toda la sección */
+  background-position: center; /* Centrada */
+  color: white;                /* Texto blanco para que contraste */
+  text-align: center;          /* Centrar el texto */
+  padding: 100px 20px;         /* Espaciado para que se vea lindo */
+}
+
+/*TITULO*/
+#titulo-principal{
+  background-color: rgba(0,0,0,0.6); /* fondo semitransparente */
+  color: white;
+  padding: 20px 40px;
+  border-radius: 15px;              /* bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* sombra */
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/*NAV*/
+nav ul {
+  display: flex;      /* pone los <li> en fila */
+  list-style: none;   /* saca los puntitos de la lista */
+  gap: 200px;          /* espacio entre cada item */
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none; /* saca el subrayado */
+  color: white;          /* color del texto */
+  font-weight: bold;
+}
+
+/*EDAD MEDIA*/
+.pie-pagina{
+  text-align: center;
+}
+
+/*YAKUZAS*/
+#lista-yakuza {
+  list-style: disc;   /* puntitos clásicos */
+  padding-left: 20px; /* espacio para que no quede pegado al borde */
+  margin: 0;
+  color: black;        /* texto clarito (si vas con fondo oscuro) */
+}
+
+#lista-yakuza li {
+  margin: 6px 0;      /* un poquito de aire entre ítems */
+}
+
+/*ACTUALIDAD*/
