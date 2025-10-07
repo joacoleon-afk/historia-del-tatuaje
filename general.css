@@ -83,13 +83,140 @@ nav a {
 }
 
 #lista-yakuza li {
-  margin: 6px 0;      /* un poquito de aire entre ítems */
+  margin: 6px 0;      
 }
 
 /*GALERIA*/
-.card-container{}
-.card{}
+/*no puedo poner las cards una a lado de la otra*/
+.card-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.card{
+ flex: 0 0 30%;
+  max-width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
 .card-img{
-  width: 200px;
+  width: 2  00px;
   height: 200px;
+  object-fit: cover;
+}
+card:hover {
+  transform: scale(1.03);
+}
+
+/*FORMULARIO*/
+/* Estilos Generales del Formulario */
+.formulario-consulta {
+    width: 90%;
+    max-width: 500px; /* Limita el ancho para que no sea gigante en PC */
+    margin: 40px auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.consulta-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el Input de Correo y el Textarea */
+.input-campo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Crucial para que el padding no desborde el ancho */
+}
+
+/* Contenedor de Botones (para el espacio entre ellos) */
+.botones-contenedor {
+    display: flex;
+    gap: 15px; /* Espacio de separación entre los botones */
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+/* Estilos Base de los Botones */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; /* Permite que crezcan un poco */
+    max-width: 120px; /* Limita el ancho máximo para que no sean demasiado grandes */
+}
+
+/*Estilo para el Botón ENVIAR (Verde) */
+.btn-verde {
+    background-color: #28a745; 
+    color: white;
+}
+
+.btn-verde:hover {
+    background-color: #218838; /* Efecto hover */
+}
+
+/*Estilo para el Botón BORRAR (Rojo) */
+.btn-rojo {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.btn-rojo:hover {
+    background-color: #c82333; /* Efecto hover */
+}
+
+/*FOOTER*/
+footer {
+    /* Fondo y Texto */
+    width: 100%;
+    padding: 25px 0;
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: white; /* Letras blancas */
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px; /* Separación del contenido principal */
+    box-sizing: border-box; /* Previene desbordamiento */
+}
+
+.copyright {
+    margin-bottom: 10px;
+    opacity: 0.8; /* Hace el texto de copyright un poco más sutil */
+}
+
+/* Navegación y Enlaces */
+.footer-nav {
+    display: block;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #ccc; /* Gris claro para los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff; /* Blanco puro al pasar el mouse */
+}
+
+/* Separador entre enlaces */
+.separador {
+    color: #555; /* Color del separador más oscuro */
+    margin: 0 8px; /* Espacio alrededor del separador */
 }
