@@ -24,10 +24,10 @@ body {
   font-family: 'Roboto Flex', sans-serif;
 }
 h2 {
-  border-bottom: 2px solid #555; /* gris oscuro */
+  border-bottom: 2px solid #555;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  display: inline-block; /* para que la línea no cruce toda la página */
+  display: inline-block;
 }
 
 
@@ -35,37 +35,37 @@ h2 {
 /*HOME*/
 #home{
   background-image: url("assets/foto-fondo.jpg");
-  background-size: cover;      /* La imagen cubre toda la sección */
-  background-position: center; /* Centrada */
-  color: white;                /* Texto blanco para que contraste */
-  text-align: center;          /* Centrar el texto */
-  padding: 100px 20px;         /* Espaciado para que se vea lindo */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 /*TITULO*/
 #titulo-principal{
-  background-color: rgba(0,0,0,0.6); /* fondo semitransparente */
+  background-color: rgba(0,0,0,0.6);
   color: white;
   padding: 20px 40px;
-  border-radius: 15px;              /* bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* sombra */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   text-align: center;
   font-size: 2.5rem;
 }
 
 /*NAV*/
 nav ul {
-  display: flex;      /* pone los <li> en fila */
-  list-style: none;   /* saca los puntitos de la lista */
-  gap: 200px;          /* espacio entre cada item */
+  display: flex;
+  list-style: none;
+  gap: 200px;
   padding: 0;
   margin: 0;
   justify-content: center;
 }
 
 nav a {
-  text-decoration: none; /* saca el subrayado */
-  color: white;          /* color del texto */
+  text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
@@ -76,10 +76,10 @@ nav a {
 
 /*YAKUZAS*/
 #lista-yakuza {
-  list-style: disc;   /* puntitos clásicos */
-  padding-left: 20px; /* espacio para que no quede pegado al borde */
+  list-style: disc;
+  padding-left: 20px;
   margin: 0;
-  color: black;        /* texto clarito (si vas con fondo oscuro) */
+  color: black;
 }
 
 #lista-yakuza li {
@@ -115,11 +115,10 @@ card:hover {
 }
 
 /*FORMULARIO*/
-/* Estilos Generales del Formulario */
 .formulario-consulta {
     width: 90%;
-    max-width: 500px; /* Limita el ancho para que no sea gigante en PC */
-    margin: 40px auto; /* Centra el formulario horizontalmente */
+    max-width: 500px;
+    margin: 40px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -136,17 +135,17 @@ card:hover {
 .input-campo {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Crucial para que el padding no desborde el ancho */
+    box-sizing: border-box; 
 }
 
-/* Contenedor de Botones (para el espacio entre ellos) */
+/* Contenedor de Botones */
 .botones-contenedor {
     display: flex;
-    gap: 15px; /* Espacio de separación entre los botones */
-    justify-content: flex-end; /* Alinea los botones a la derecha */
+    gap: 15px;
+    justify-content: flex-end; 
 }
 
 /* Estilos Base de los Botones */
@@ -157,28 +156,28 @@ card:hover {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    flex-grow: 1; /* Permite que crezcan un poco */
-    max-width: 120px; /* Limita el ancho máximo para que no sean demasiado grandes */
+    flex-grow: 1;
+    max-width: 120px;
 }
 
-/*Estilo para el Botón ENVIAR (Verde) */
+
 .btn-verde {
     background-color: #28a745; 
     color: white;
 }
 
 .btn-verde:hover {
-    background-color: #218838; /* Efecto hover */
+    background-color: #218838;
 }
 
-/*Estilo para el Botón BORRAR (Rojo) */
+
 .btn-rojo {
     background-color: #dc3545; 
     color: white;
 }
 
 .btn-rojo:hover {
-    background-color: #c82333; /* Efecto hover */
+    background-color: #c82333;
 }
 
 /*FOOTER*/
@@ -186,17 +185,17 @@ footer {
     /* Fondo y Texto */
     width: 100%;
     padding: 25px 0;
-    background-color: #333; /* Color de fondo gris oscuro */
-    color: white; /* Letras blancas */
+    background-color: #333;
+    color: white;
     text-align: center;
     font-size: 0.9em;
-    margin-top: 40px; /* Separación del contenido principal */
-    box-sizing: border-box; /* Previene desbordamiento */
+    margin-top: 40px;
+    box-sizing: border-box;
 }
 
 .copyright {
     margin-bottom: 10px;
-    opacity: 0.8; /* Hace el texto de copyright un poco más sutil */
+    opacity: 0.8;
 }
 
 /* Navegación y Enlaces */
@@ -206,17 +205,16 @@ footer {
 }
 
 footer a {
-    color: #ccc; /* Gris claro para los enlaces */
-    text-decoration: none; /* Quita el subrayado */
+    color: #ccc;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #fff; /* Blanco puro al pasar el mouse */
+    color: #fff;
 }
 
-/* Separador entre enlaces */
 .separador {
-    color: #555; /* Color del separador más oscuro */
-    margin: 0 8px; /* Espacio alrededor del separador */
+    color: #555;
+    margin: 0 8px;
 }
